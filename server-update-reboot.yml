@@ -1,9 +1,10 @@
-- hosts: all
-max_fail_percentage: 0
-serial: 1
-become: yes
-roles:
-# - stop-applications
-- server-update-reboot
-# - server-config-xyz
-#  - start-applications
+- name: List_Packages
+  hosts: all
+    max_fail_percentage: 0
+    serial: 1
+    become: yes
+    roles:
+    # - stop-applications
+    - server-update-reboot
+    # - server-config-xyz
+    #  - start-applications
