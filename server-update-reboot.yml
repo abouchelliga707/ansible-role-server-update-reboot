@@ -1,5 +1,7 @@
 - name: List_Packages
   hosts: all
+  tasks:
+    - name: Packages
       max_fail_percentage: 0
       serial: 1
       become: yes
